@@ -1,0 +1,230 @@
+body {
+  background: burlywood;
+  h1 {
+    background-color: rgba(22, 20, 23, 0.667);
+  }
+  nav ul {
+    background-color: rgba(0, 0, 0, 0.53);
+    height: 50px;
+    margin: 0px;
+  }
+}
+
+body h1 {
+  border-radius: 25px;
+}
+img {
+  display: block;
+  margin: auto;
+  width: 250px;
+  border-radius: 25px;
+}
+
+
+#img2 {
+  width: 350px;
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.75;       
+  text-align: center;    
+  margin-bottom: 20px;
+  color: #38312a;
+}
+
+h1 {
+  text-align: center;
+  color : burlywood
+}
+h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+h3 {
+  text-align: center;
+  color: #000000;
+  margin: ;
+}
+
+#secret {
+  color: burlywood;
+}
+ul {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  color: #00000084;
+}
+
+
+
+
+
+/*container for the collage grid */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;                                                   
+  max-width: 800px;                                            
+  margin: 20px auto 40px auto;                                
+  padding: 0 15px;
+}
+
+.collage img {
+  width: 100%;
+  height: 200px;          
+  object-fit: cover;    
+  border-radius: 10px;
+}
+
+
+/*navigation bar accross all pages*/
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #000000;
+  padding: 10px 20px;
+  list-style: none;
+  border-radius: 25px;
+  nav li {
+    border: 10px solid #000;
+  }
+
+  nav li a {
+    display: inline-block;
+    padding: 5px 15px;
+  }
+}
+nav li a.active {
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: burlywood;
+    color: rgb(0, 0, 0);
+}
+
+
+/*mbile layout*/
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d6be96;
+  color: #2b2621;
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px;
+}
+
+.collage, .portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.collage img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*tablet*/
+@media (min-width: 768px) {
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .collage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    width: 80%;
+  }
+}
+
+/*desktop*/
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px; 
+  }
+
+  .collage {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+
+
+
+
+
+/*CV page*/
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+
+.cv-block {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.cv-block h2 {
+  text-align: left;
+  border-bottom: 2px solid #38312a;
+  padding-bottom: 6px;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.cv-item {
+  margin-bottom: 15px;
+}
+
+.cv-item h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+}
+
+.cv-meta {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0 0 8px 0;
+  opacity: 0.85;
+}
+
+
+@media (min-width: 768px) {
+  .cv-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
